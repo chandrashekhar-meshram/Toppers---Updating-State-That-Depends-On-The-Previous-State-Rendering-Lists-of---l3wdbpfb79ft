@@ -41,6 +41,7 @@ class App extends Component {
     render() {
     	return(
     		<div id="main">
+		hi
     			{
     				//Correct the percentage conditional for correct output
     				this.state.list.map(function(item,index){
