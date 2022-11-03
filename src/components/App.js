@@ -70,3 +70,6 @@ class App extends Component {
 
 export default App;
 
+// Listing with map function
+// https://www.youtube.com/watch?v=TJ66JKNdBtE
+
