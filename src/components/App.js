@@ -38,24 +38,28 @@ class App extends Component {
 			],
 		}
 	};
+	
     render() {
+		
+		
     	return(
     		<div id="main">
+                <h4>25-Aug 2022 - Toppers</h4>			
 		
     			{
-    				//Correct the percentage conditional for correct output
+    				// Correct the percentage conditional for correct output
     				this.state.list.map(function(item,index){
-				   		if(item.percent > 0)
+						
+				   		if(item.percent > 75.00)
 				   		{
-				   			return(
-				   				//Conditional statement in the className of below div to give callName="bg-pink"
-				   				//if the percent >= 90 else className = "" 
-				   				<div key={index} className="">
-					   				<div className="name">
-					   					 //Write code to display name
+				   			return(							
+							//    <div key={index} className={(item.percent >= 90.00) ? 'bg-pink' : ""}>
+								   <div key={index} className='bg-pink'>
+					   				<div className="name">					   					
+										 {item.name}
 					   				</div>
 					   				<div className="percent">
-					   					 //Write code to display percentage upto 2 decimal places
+					   					{item.percent.toFixed(2)}
 					   				</div>
 				   				</div>
 				   				);
@@ -63,7 +67,7 @@ class App extends Component {
 			       })
 			    }
     		</div>
-    		);
+       );
     }
 }
 
