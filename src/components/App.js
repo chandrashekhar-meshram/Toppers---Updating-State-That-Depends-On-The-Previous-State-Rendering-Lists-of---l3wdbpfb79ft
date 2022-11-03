@@ -39,7 +39,7 @@ class App extends Component {
 		}
 	};
 	
-    render() {
+   render() {
 		
 		
     	return(
@@ -53,13 +53,13 @@ class App extends Component {
 				   		if(item.percent > 75.00)
 				   		{
 				   			return(							
-							//    <div key={index} className={(item.percent >= 90.00) ? 'bg-pink' : ""}>
-								   <div key={index} className='bg-pink'>
+							    <div key={index} className={(item.percent >= 90.00) ? 'bg-pink' : ""}>
+								   {/* <div key={index} className='bg-pink'> */}
 					   				<div className="name">					   					
 										 {item.name}
 					   				</div>
 					   				<div className="percent">
-					   					{item.percent.toFixed(2)}
+					   					{Math.round(item.percent)}
 					   				</div>
 				   				</div>
 				   				);
@@ -67,7 +67,7 @@ class App extends Component {
 			       })
 			    }
     		</div>
-       );
+    		);
     }
 }
 
