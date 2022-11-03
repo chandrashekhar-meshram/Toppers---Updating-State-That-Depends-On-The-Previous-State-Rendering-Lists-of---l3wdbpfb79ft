@@ -44,7 +44,7 @@ class App extends Component {
 		
     	return(
     		<div id="main">
-                <h4>25-Aug 2022 - Toppers</h4>			
+               	
 		
     			{
     				// Correct the percentage conditional for correct output
