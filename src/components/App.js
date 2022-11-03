@@ -73,3 +73,5 @@ export default App;
 // Listing with map function
 // https://www.youtube.com/watch?v=TJ66JKNdBtE
 
+// https://www.w3schools.com/jsref/jsref_tofixed.asp
+
