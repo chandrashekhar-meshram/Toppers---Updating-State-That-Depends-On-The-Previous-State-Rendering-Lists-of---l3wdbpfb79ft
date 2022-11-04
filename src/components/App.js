@@ -47,7 +47,7 @@ class App extends Component {
                	
 		
     			{
-    				// Correct the percentage conditional for correct output
+    				
     				this.state.list.map(function(item,index){
 						
 				   		if(item.percent > 75.00)
@@ -59,7 +59,7 @@ class App extends Component {
 										 {item.name}
 					   				</div>
 					   				<div className="percent">
-					   					{Math.round(item.percent)}
+					   					{item.percent.toFixed(2)}
 					   				</div>
 				   				</div>
 				   				);
